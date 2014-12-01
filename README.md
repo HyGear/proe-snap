@@ -8,11 +8,11 @@ There are 2 ways to use this script:
 
 1. Copy the proe-snap.py file to your working directory, open a cmd window and type the following:
 
-python proe-snap.py
+  python proe-snap.py
 
 2. Create a mapkey in Pro/Engineer and enter the following under the "OS Script" option:
 
-C:\path\to\python\python.exe C:\path\to\script\proe-snap.py
+  C:\path\to\python\python.exe C:\path\to\script\proe-snap.py
 
 Revision Control
 ===============
