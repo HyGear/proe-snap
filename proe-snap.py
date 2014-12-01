@@ -15,8 +15,9 @@ from os.path import isfile, join, basename
 from datetime import datetime
 
 #Setup variables
-start_dir = 'F:\\purge\\'
-temp_dir = "fixme"
+#start_dir = 'F:\\purge\\'
+start_dir = os.getcwd().replace("\\","\\\\") + "\\\\"
+#temp_dir = "fixme"
 ext_list = [".asm",".drw",".prt"]
 purge_list = {}
 new_list = []
@@ -67,6 +68,7 @@ else:
 
 
 for z in new_list:
-	src = start_dir+z
+	basename = os.path.splitext(z)[0]
+	src = start_dir+basename+".1"
 	copyFile(src,snap_dir)
 	
