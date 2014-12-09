@@ -72,8 +72,8 @@ def Main():
 	makeList()
 	for z in new_list:
 		basename = os.path.splitext(z)[0]
-		src = start_dir+basename+".1"
-		copyFile(src,snap_dir)
+		dst = snap_dir+"\\"+basename+".1"
+		copyFile(z,dst)
 	
 if __name__ == "__main__":
     Main()
