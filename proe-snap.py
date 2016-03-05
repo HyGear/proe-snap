@@ -44,7 +44,7 @@ def makeList():
 		#Check if the file is a valid extension.
 		if temp[0][-4:] in ext_list:
 			if temp[0] in purge_list:
-				if temp[1][1:] > purge_list[temp[0]]:
+				if int(temp[1][1:]) > int(purge_list[temp[0]]):
 					purge_list[temp[0]] = temp[1][1:]
 			else:
 				purge_list[temp[0]] = temp[1][1:]
